@@ -23,6 +23,8 @@ https://www.youtube.com/watch?v=dNRDvLACg5Q
 
 https://www.youtube.com/watch?v=RPQD7-AOjMI
 
+https://www.youtube.com/watch?v=macM_MtS_w4
+
 The works of and life of Turing and Neumann are fascinating. Their wikipedia pages are treasure troves.
 
 A simple Enigma Machine I made in python.
