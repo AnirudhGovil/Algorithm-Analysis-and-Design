@@ -27,9 +27,12 @@ https://www.youtube.com/watch?v=macM_MtS_w4
 
 The works of and life of Turing and Neumann are fascinating. Their wikipedia pages are treasure troves.
 
-A simple Enigma Machine I made in python.
+### Implementations
+
+A simple Enigma Machine I made in python after falling down an Alan Turing rabbit Hole.
 
 https://github.com/AnirudhGovil/Enigma-Machine-Project
 
+### Thoughts
 
-
+Quantum computers in theory are expotentially more efficient than classical Turing Machines, and in some sense can "beat" them. The notion of a quantum Turing Machine was thus created to establish that quantum computers too are Turing Complete. A Quantum Turing Machine's Internal state as well as the location of it's head on the tape is not singular but rather a linear combination of states in "superposition". It's ability to explore multiple computational paths at once gives it unique capabilities. A subtley differnt concept is that of Non-Deterministic Turing Machines whose descisions to trasition from one state to another are probabilistic, as compared to the Quantum Turing Machine which transition with certainity to a "superpostion" of states.
