@@ -17,5 +17,16 @@ Cantor's diagonalisation proof can be used to show that the power set of binary 
 
 It simply states that every effective computation can be carried out by a Turing Machine. A Turing Machine is a 7-tuple with a finite set of control symbols moving over an infinite length tape with finite tape symbols. It moves across the tape, readin the tape symbols and changing its state acccrodingly. Any computable program that we can think of can be done by a Turing Machine. 
 
+### Extra Reading
+
+https://www.youtube.com/watch?v=dNRDvLACg5Q
+https://www.youtube.com/watch?v=RPQD7-AOjMI
+
+The works of and life of Turing and Neumann are fascinating. Their wikipedia pages are treasure troves.
+
+A simple Enigma Machine I made in python.
+
+https://github.com/AnirudhGovil/Enigma-Machine-Project
+
 
 
