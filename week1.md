@@ -20,6 +20,7 @@ It simply states that every effective computation can be carried out by a Turing
 ### Extra Reading
 
 https://www.youtube.com/watch?v=dNRDvLACg5Q
+
 https://www.youtube.com/watch?v=RPQD7-AOjMI
 
 The works of and life of Turing and Neumann are fascinating. Their wikipedia pages are treasure troves.
