@@ -7,7 +7,7 @@ We aim to check the Correctness of a few algorithms, how much time they will tak
 The standard recursive and iterative implementations to calculate the nth Fibonacci number are O(n2) algorithms, even with optimisation techniques like memoisation due to the simple fact that an upto O(n) multiplication must be done upto n-1 times to calculate the nth member of the Fibonacci series.
 
 An alternate approach would be to treat the computation of the next member of the Fibonacci series as a transformation of the form 
-![Linear Transformation](Linear)
+![Linear Transformation](Fibonacci_as_a_linear_transformation.jpeg)
 
 The next steps would be to diagonalise the transformation to simplify multiplying it n times.
 
