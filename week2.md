@@ -19,7 +19,9 @@ We split each integer into two halves, creating 4 numbers out of the face values
 
 Anoter example of this Divide adn Conquer approach can be seen in the Merge Sort Algorithm, where we recursively split the list into 2 halves and sort the halves before merging them back together. Any sorting algorithm involving n numbers has n! permutations. A sorting algorithm would have to make at least log<sub>2</sub>(n!) omparisons in order to sort the list of numbers. If the comparison time is constant, this means any sorting algortihm can be mapped to a binary number of length log<sub>2</sub>(n!). Thus &Omega;(nlogn) is the lower bound on comparison based sorting as it can be broken down to n comparisons at log(n) levels of the decision tree.
 
-Anotehr example of Divide and Conquer is Strassen's algorithm for multiplying matrices. We split the an n x n matrix into 4 smaller matrices of size n/2 x n/2 size. Under the naive aproach to calculating matrix prodeucts, we would then need eight multiplications to reach the answer, giving an O(n<sup>3</sup>) runtime. Strassen's Algorithm reduces this to 7 multiplcaitions per step.
+Anotehr example of Divide and Conquer is Strassen's algorithm for multiplying matrices. We split the an n x n matrix into 4 smaller matrices of size n/2 x n/2 size. Under the naive aproach to calculating matrix prodeucts, we would then need eight multiplications to reach the answer, giving an O(n<sup>3</sup>) runtime. Strassen's Algorithm reduces this to 7 multiplications per step.
 
 ![Strassen's Algorithm](strassen.png)
+
+This reduces the time complexity to O(n<sup>log<sub>2</sub>7</sup>)
 
