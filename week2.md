@@ -17,3 +17,5 @@ Here comes the divide and conquer approach of Karatsuba’s Multiplication.
 
 We split each integer into two halves, creating 4 numbers out of the face values digits of the original two integers, and through 3 multiplications, along with addition, subtraction and shifts, we are able to achieve the original result. If we are to carry out this division process recursively, we can fundamentally reduce the complexity from O(n<sup>2</sup>) to O (n<sup>log<sub>2</sub>3</sup>).
 
+Anoter example of this Divide adn Conquer approach can be seen in the Merge Sort Algorithm, where we recursively split the list not 2 halves and sort the halves before merging them back together.
+
