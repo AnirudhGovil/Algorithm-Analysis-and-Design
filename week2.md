@@ -25,3 +25,14 @@ Anotehr example of Divide and Conquer is Strassen's algorithm for multiplying ma
 
 This reduces the time complexity to O(n<sup>log<sub>2</sub>7</sup>)
 
+We can also apply the Divide and Conquer approach to speed up Median Finding. The naive approach would be to sort the list of number using an nlogn algorithm like merge sort and output the middle element however we can achive O(n) time as follows:
+
+* We can divide the elements into groups of 5. 
+* Find the median of the n/5 groups. 
+* Find the median of the medians of the n/5 groups, let's call it x
+
+Then,
+![Median 1](median1.png)
+![Median 2](median2.png)
+
+Thus at the end of every iteration we can reduce the number of elements by a factor 7/10.
