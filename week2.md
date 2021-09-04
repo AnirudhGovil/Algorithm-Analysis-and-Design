@@ -32,7 +32,7 @@ We can also apply the Divide and Conquer approach to speed up Median Finding. Th
 * Find the median of the medians of the n/5 groups, let's call it x
 
 Then,
-![Median 1](median1.png)
-![Median 2](median2.png)
+![Median 1](medians1.png)
+![Median 2](medians2.png)
 
 Thus at the end of every iteration we can reduce the number of elements by a factor 7/10.
