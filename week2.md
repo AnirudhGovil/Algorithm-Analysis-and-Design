@@ -21,4 +21,4 @@ Anoter example of this Divide adn Conquer approach can be seen in the Merge Sort
 
 Anotehr example of Divide and Conquer is Strassen's algorithm for multiplying matrices. We split the an n x n matrix into 4 smaller matrices of size n/2 x n/2 size and perform the multiplication as follows
 
-![Strassen's Algorithm](Strassen.jpeg)
+![Strassen's Algorithm](strassen.png)
