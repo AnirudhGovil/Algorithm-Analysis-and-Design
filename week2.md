@@ -36,4 +36,4 @@ Then,
 ![Median 1](medians1.png)
 ![Median 2](medians2.png)
 
-Thus at the end of every iteration we can reduce the number of elements by a factor 7/10.
+Thus at the end of every iteration when split the elments into groups of 5, we can reduce the number of elements by a factor 7/10. Analysis reveals than the recurrence relation T(n) = c([n/5]) + c([7n/10]+6) + an evalutaes to O(n).
