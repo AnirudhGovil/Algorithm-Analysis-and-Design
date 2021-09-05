@@ -1,5 +1,29 @@
 # Week3
 
+## Applying Divide and Conquer to Polynomial Multiplication
+
+The naive approch considers polynomials in their coefficient representation, and repeatedly applies the distributive property over these lists of coefficients, taking d<sup>2</sup> time to executre,w here d is the degree of the larger of the 2 polynomials.
+
+The first key insight is to express polynomials as a set of d+1 unique points, as only one polynomial of degree d can be uniquely mapped to d+1 unique points. Let's call this the value representation.
+
+Now to multiply two polynomials of degree d each, we simply convert them to their value repsentation at 2d+1 points and multiply them with each other to get the value representation of the resulting polynomial of degree 2d. Thus multiplication is now an 0(d) operation.
+
+Our overarching approach is, given two polynomials of degree d, convert them to their their value representations. Multiply these value representations to get the value representation of the resulting polynomial in 0(d) time and convert the value representation of the resulting polynomial back into the coefficeint representation.
+
+## Fast Fourrier Transform
+
+The key here is to optimise the conversion from coefficient representation to value representation and vice versa.
+
+In order to optimise the process of converting coefficient representation into value representation, we can consider positive - negative pairs for evaulation. In even degree polynomials, this means if evaulating the the polynomial at a gives f(a) means the polynomial at -a is also f(a), while in odd degree polynomials the polynomial at -a will give -f(a). Thus we can half the number of evaulations required.
+
+We factor a polynomial inot two halves, even degree terms and odd degree terms. We then take an x out of the odd degree terms to get 2 polynomials with only even degree terms. These new polynomials are of half the degree of our original polynomials whcih means we need to evaulte only half as many points.
+
+However, these new polynomials can be further split into 2 just like we did before, giving rise a a recursive approach.
+
+it is important to notice that the new ploynomials are actually polynomials of not x but x<sup>2</sup> which means that in order to find positive negative pairs even for an x<sup>2</sup> polynomial, we need to expand the domain to complex numbers, so that the recursion can continue.
+
+If n is the smallest power of 2 that bounds the degree of the polynomial, the n<sup>th</sup> roots of unity give us our positive negative pair evaulations points. The n<sup>th</sup> roots of unity are the solutions of z<sup>n</sup>=1. Using Euler's formula, we can compactly write them as &omega;<sup>2&pi;i/n</sup>.
+
 ## Greedy Strategy
 
 Fundamentally the Greedy Strategy means picking the local optimum in every step hoping the get a global optimum overall.
