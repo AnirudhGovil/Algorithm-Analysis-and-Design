@@ -32,7 +32,7 @@ Thus by recursively splitiing the polynomial into halves, evaulting it at roots 
 
 After using the FFT to find a value representation and multiplying the value representations together, we must interpolta the value representation back into. Since evaulation can be represented as applying a transformation matrix to a vector of coefficeints to get a vector of values (value representation). Since our evaluation points are the  n<sup>th</sup>roots ofunity, our transformation matrix is the DFT matrix (Discrete Fourrier Transform) interpolation involves multiplying the value representaion vector into the inverse of the DFT matrix to get the vector of coefficients. 
 
-[!InverseDFT](DFTmatrix.png)
+![InverseDFT](DFTmatrix.png)
 
 In the inverse, every &omega; is now simply &omega;<sup>-1</sup> times 1/n, which means we can reaplly the process we used in our FFT: an algorithm called Inverse FFT. Inverse FFT is simply FFT with the evaluation points as as 1/n &omega;<sup>-2&pi;i/n</sup>.
 
