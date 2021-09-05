@@ -22,7 +22,7 @@ However, these new polynomials can be further split into 2 just like we did befo
 
 it is important to notice that the new ploynomials are actually polynomials of not x but x<sup>2</sup> which means that in order to find positive negative pairs even for an x<sup>2</sup> polynomial, we need to expand the domain to complex numbers, so that the recursion can continue.
 
-If n is the smallest power of 2 that bounds the degree of the polynomial, the n<sup>th</sup> roots of unity give us our positive negative pair evaulations points. The n<sup>th</sup> roots of unity are the solutions of z<sup>n</sup>=1. Using Euler's formula, we can compactly write them as &omega;<sup>2&pi;i/n</sup>.
+If n is the smallest power of 2 that bounds the degree of the polynomial, the n<sup>th</sup> roots of unity give us our positive negative pair evaulations points. The n<sup>th</sup> roots of unity are the solutions of z<sup>n</sup>=1. Using Euler's formula, we can compactly write them as &omega;<sup>2&pi;i/n</sup>
 
 Thus we evaulate the polynomial at [1,&omega;,&omega;<sup>2</sup>,&omega;<sup>3</sup>...]. When we split into 2 smaller polynomials and square the roots of unity to [1,&omega;<sup>2</sup>,&omega;<sup>4</sup>...] we get half the number of points and perfect positive - negative pairs.
 
@@ -30,9 +30,15 @@ Thus by recursively splitiing the polynomial into halves, evaulting it at roots 
 
 ## Concluding polynomial mutiplication
 
-After using the FFT to find a value representation and multiplying the value representations together, we must interpolta the value representation back into. Since evaulation can be represented as applying a transformation matrix to a vector of coefficeints to get a vector of values (value representation). Since our evaluation points are the  n<sup>th</sup>roots ofunity, our transformation matrix is the DFT matrix (Discrete Fourrier Transform) interpolation involves multiplying the value representaion vector into the inverse of the DFT matrix to get the vector of coeffcients.
+After using the FFT to find a value representation and multiplying the value representations together, we must interpolta the value representation back into. Since evaulation can be represented as applying a transformation matrix to a vector of coefficeints to get a vector of values (value representation). Since our evaluation points are the  n<sup>th</sup>roots ofunity, our transformation matrix is the DFT matrix (Discrete Fourrier Transform) interpolation involves multiplying the value representaion vector into the inverse of the DFT matrix to get the vector of coefficients. 
 
 [!InverseDFT](DFTmatrix.png)
+
+In the inverse, every &omega; is now simply &omega;<sup>-1</sup> times 1/n, which means we can reaplly the process we used in our FFT: an algorithm called Inverse FFT. Inverse FFT is simply FFT with the evaluation points as as 1/n &omega;<sup>-2&pi;i/n</sup>.
+
+Thus the time complexity to multiply two polynomials of degree d is reduced from O(d<sup>2</sup>) to O(nlogn) where n is the smallest power of 2 that bounds d.
+
+
 
 ## Greedy Strategy
 
